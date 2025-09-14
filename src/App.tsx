@@ -56,7 +56,7 @@ function App() {
           {/* Login Button */}
           <button
             onClick={handleLogin}
-            className="w-full md:w-auto min-w-[200px] bg-white text-blue-600 font-semibold text-lg px-8 py-4 rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 hover:bg-blue-50 focus:outline-none focus:ring-4 focus:ring-white/30"
+            className="w-full md:w-auto min-w-[200px] bg-blue-600 text-white font-semibold text-lg px-8 py-4 rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-white/30"
           >
             Login
           </button>
@@ -72,7 +72,7 @@ function App() {
           {/* Dashboard Button */}
           <button
             onClick={handleDashboard}
-            className="w-full md:w-auto min-w-[200px] bg-white/10 backdrop-blur-sm text-white font-semibold text-lg px-8 py-4 rounded-2xl border-2 border-white/30 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 hover:bg-white/20 focus:outline-none focus:ring-4 focus:ring-white/30"
+            className="w-full md:w-auto min-w-[200px] bg-blue-600 text-white font-semibold text-lg px-8 py-4 rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-white/30"
           >
             Go to Dashboard
           </button>

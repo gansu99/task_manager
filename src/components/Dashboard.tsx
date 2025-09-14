@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { LogOut, Plus } from 'lucide-react';
+import { LogOut, Plus, ArrowLeft } from 'lucide-react';
 
 interface DashboardProps {
   onLogout: () => void;
+  onBackToHome: () => void;
 }
 
-function Dashboard({ onLogout }: DashboardProps) {
+function Dashboard({ onLogout, onBackToHome }: DashboardProps) {
   const [tasks, setTasks] = useState([
     'Finish homework',
     'Call John',
@@ -24,6 +25,15 @@ function Dashboard({ onLogout }: DashboardProps) {
   return (
     <div className="min-h-screen bg-gradient-blue font-open-sans flex items-center justify-center p-4">
       <div className="w-full max-w-2xl mx-auto">
+        {/* Back Button */}
+        <button
+          onClick={onBackToHome}
+          className="mb-8 flex items-center text-white/80 hover:text-white transition-colors duration-200 group"
+        >
+          <ArrowLeft className="w-5 h-5 mr-2 transform group-hover:-translate-x-1 transition-transform duration-200" />
+          <span className="font-medium">Back to Home</span>
+        </button>
+
         {/* Dashboard Container */}
         <div className="bg-white/95 backdrop-blur-sm rounded-3xl shadow-2xl p-8 md:p-12">
           {/* Heading */}

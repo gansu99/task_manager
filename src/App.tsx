@@ -35,7 +35,7 @@ function App() {
   }
 
   if (currentPage === 'dashboard') {
-    return <Dashboard onLogout={handleLogout} />;
+    return <Dashboard onLogout={handleLogout} onBackToHome={handleBackToHome} />;
   }
 
   return (
